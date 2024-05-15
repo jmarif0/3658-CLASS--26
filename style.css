@@ -1,0 +1,98 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Clients Section CSS */
+.client-content h2{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.client-content h2::before{
+    content: " ";
+    height: 2px;
+    width: 57px;
+    background: #3763eb;
+    position: absolute;
+    top: 172px;
+    left: 0;
+}
+.logo-box{
+    position: relative;
+    z-index: 1;
+}
+.logo-box::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    background: #000;
+    opacity: .2;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.logo-box:hover:before{
+    width: 100%;
+}
+
+/* News & Blog CSS Start */
+.blog-content h2{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.blog-content h2::before{
+    content: " ";
+    height: 2px;
+    width: 54px;
+    background: #3763eb;
+    position: absolute;
+    top: 67px;
+    left: 285px;
+}
+.blog{
+    position: relative;
+}
+
+.blog .btn-primary{
+    border-radius: 25px;
+    background: #3763eb !important;
+    position: absolute;
+    top: 204px;
+  right: 27px;
+    
+}
+.blog .btn-primary img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+/* News & Blog CSS End */
+
+
+/* Footer CSS Start */
+.footer{
+    background: #081828;
+    color: #fff;
+}
+
+.footer-content h5{
+    position: relative;
+}
+.footer-content h5::before{
+    content: "";
+    height: 22px;
+    width: 2px;
+    background: #3763eb;
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+}
+/* Footer CSS End */
